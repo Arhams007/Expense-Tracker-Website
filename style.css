@@ -1,0 +1,103 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 350px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+.expense-form input::placeholder {
+    color: #e0e0e0;
+}
+
+#add-expense-btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#add-expense-btn:hover {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button.edit-btn {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+button.delete-btn {
+    background: linear-gradient(135deg, #e94057, #f27121);
+}
+
+button:hover {
+    opacity: 0.9;
+}
